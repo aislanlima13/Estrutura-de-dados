@@ -1,0 +1,50 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+void lerABC();
+void delta();
+void raizes();
+
+main() {
+	
+	double a = 0;
+	double b = 0;
+	double c = 0;
+	double delta = 0;
+	
+	lerABC();
+	delta();
+	raizes();
+
+}
+
+public void lerABC() {
+	cout << "Infome o valor de A" << endl;
+	cin >> a;
+	
+	cout << "Infome o valor de B" << endl;
+	cin >> b;
+	
+	cout << "Infome o valor de C" << endl;
+	cin >> c;
+}
+
+public void delta() {
+	delta = (b * b) - 4 * a * c;
+}
+
+public void raizes() {
+	if (delta < 0) {
+		cout << "Delta menor que zero";
+	} else {
+		double x1 = 0;
+		double x2 = 0;
+		
+		x1 = -b + sqrt(delta) / (2 * a);
+		x2 = -b - sqrt(delta) / (2 * a);
+		
+		cout << "x1: " << x1 << endl;
+		cout << "x2: " << x2 << endl;
+	} 
+}
